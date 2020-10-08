@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="m-auto text-center">
+    <main class="flex flex-col content">
+        <h2 class="text-blue-700">Speak Bot</h2>
+
+        <div class="border border-blue m-4 p-4 content-text" 
+            oninput="setText(event)"
+            contenteditable
+        > 
+            Seu texto aqui
+        </div>
+
+        <div class="mb-5">
+            <span class="text-black-500">Speed:</span>
+            <select name="speeds" id="speed-speak" onchange="changeSpeed(event)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <div class="buttons">
+            <button class="bg-blue-200 p-4 rounded shadow text-black" onclick="stopSpeak()">
+                Parar
+            </button>
+            <button class="bg-blue-700 p-4 rounded shadow text-white" onclick="speak()">
+                Falar
+            </button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.12/tailwind.min.css";
+
+.content{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content h2{
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.content span{
+    font-weight: 500;
+}
+
